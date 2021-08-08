@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+    /*background-color: aqua;*/
+    box-sizing: border-box;
+    font-family: 'Andada Pro', serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,-0.2),rgba(0,0,0,-0.1)),url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width:100%;
+    height: 15vh;
+     color:aliceblue;
+     display:flex;
+     justify-content:space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;
+    height:50px;
+    text-align: center;
+    
+}
+nav .menu
+{
+    width: 45%;
+    color: white;
+    display:flex;
+    justify-content: space-around;
+}
+nav .menu a{
+    width:25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+main{
+    width:100%;
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:aliceblue; 
+
+}
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight:200;
+    letter-spacing:3px;  
+    text-shadow: 1px 1px 3px black;
+}
+section h1{
+    margin:30px 0px 20px 0px;
+    font-size: 60px;
+    font-weight: 650;
+    letter-spacing: 2px;
+    text-shadow: 3px 2px 3px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px black;
+}
+section a{
+padding:12px 30px;
+border-radius:4px ;
+outline: none;
+text-decoration: none;/*yaha pr anchor tag hai aur underline aata hai usi ko hatane ke liye*/
+text-transform: uppercase;
+font-size:13px;
+font-weight:500;
+letter-spacing: 1px;
+transition: all .5s ease;
+
+}
+section .btnone{
+    background: #fff;
+    color:#000;
+}
+.btnone:hover{
+    background: #00b894;
+    color: #fff;
+}
+section .btntwo{
+    background: #fff;
+    color:black;
+}
+.btntwo:hover{
+    background:#00b894;
+    color:#00b894;
+}
+
+
+.change_content:after{
+    content:'';
+    animation: changetext 7s infinite linear;
+    color:red;
+
+}
+@keyframes changetext{
+    0%{content:"Sitamarhi";}
+    20%{content:"Darbhanga";}
+    30%{content:"Muzaffarpur";}
+    50%{content:"Siwan";}
+    65%{content:"Ara Jila";}
+    80%{content:"Bihta";}
+    100%{content:"Buxar";}
+}
